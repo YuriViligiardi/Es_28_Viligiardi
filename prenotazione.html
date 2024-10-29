@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>prenotazione.html</title>
+</head>
+<body>
+    <form action="gestioneprenotazione.php" method="post">
+        <h2>Dati ordine:</h2>
+        <p>Inserisci il nome: </p>
+        <input type="text" name="name">
+        <p>Inserisci il cognome: </p>
+        <input type="text" name="surname">
+        <p>Scegli il numero del tavolo: </p>
+        <select name="numTable">
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5</option>
+        </select>
+        <p>Inserisci l'orario: </p>
+        <input type="time" name="time">
+        <p>Inserisci delle eventuali note: </p>
+        <textarea name="note"></textarea>
+        <p>Quale pasti desideri: </p>
+        <input type="checkbox" name="meals[]" value="antipasto"> Antipasto
+        <input type="checkbox" name="meals[]" value="primo"> Primo
+        <input type="checkbox" name="meals[]" value="secondo"> Secondo
+        <p>Vuoi usufruire di uno di questi servizi: </p>
+        <input type="radio" name="service" value="Custodito"> Del parcheggio custodito
+        <input type="radio" name="service" value="Non Custodito"> Del parcheggio non custodito 
+        <input type="radio" name="service" value="Non usufruisco"> Non usufruisco
+        <br>
+        <br>
+        <input type="submit">
+    </form>
+</body>
+</html>
